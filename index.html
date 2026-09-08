@@ -76,11 +76,9 @@
   .stack{display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;}
   .chip{font-family:var(--mono); font-size:0.72rem; color:var(--text-muted); border:1px solid var(--border-strong); padding:0.15em 0.55em; border-radius:5px;}
   .project-links{display:flex; gap:1.2rem; font-family:var(--mono); font-size:0.82rem;}
-  .video-note{
-    display:flex; align-items:center; gap:0.5rem; font-family:var(--mono); font-size:0.78rem;
-    color:var(--accent-text); background:var(--accent-bg); border:1px solid var(--accent-border);
-    padding:0.4em 0.8em; border-radius:7px; margin-top:0.9rem; width:fit-content;
-  }
+  .demo-video{margin-top:1rem;}
+  .demo-video video{width:100%; display:block; border-radius:8px; border:1px solid var(--border); background:var(--code-bg);}
+  .demo-video .label{font-family:var(--mono); font-size:0.7rem; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.4rem;}
 
   /* ---- experience ---- */
   .job{display:grid; grid-template-columns:110px 1fr; gap:1.2rem; margin-bottom:1.5rem;}
@@ -171,7 +169,10 @@
         <span class="chip">React</span><span class="chip">OpenCV.js</span><span class="chip">Tesseract.js</span>
         <span class="chip">ML document detection</span><span class="chip">FastAPI</span>
       </div>
-      <div class="video-note">&#9654; demo video &mdash; add link/upload</div>
+      <div class="demo-video">
+        <div class="label">demo</div>
+        <video controls preload="metadata" src="ebol-demo.mp4"></video>
+      </div>
       <details class="deep">
         <summary><span class="arrow">&#9656;</span> how it actually works</summary>
         <div class="deep-body">
@@ -192,6 +193,10 @@
       <div class="stack">
         <span class="chip">Django</span><span class="chip">GitHub API</span><span class="chip">Zip upload</span>
         <span class="chip">Claude</span><span class="chip">OpenAI</span><span class="chip">DeepSeek</span>
+      </div>
+      <div class="demo-video">
+        <div class="label">demo</div>
+        <video controls preload="metadata" src="codeverify-demo.mp4"></video>
       </div>
       <details class="deep">
         <summary><span class="arrow">&#9656;</span> how it actually works</summary>
